@@ -18,6 +18,8 @@ services:
       context: centOS7
     networks: 
       - bubble
+    volumes:
+      - ./aws-s3.sh:/tmp/script.sh
 
   mysql:
     container_name: mysql
